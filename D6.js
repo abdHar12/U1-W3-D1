@@ -6,7 +6,7 @@ function concatStrings(str1, str2) {
   return str1.slice(0, 2) + str2.slice(-3);
 }
 
-console.log(concatStrings("ciao", "epicode"));
+console.log(concatStrings("ciao", "epicode").toUpperCase());
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
@@ -64,7 +64,7 @@ for (let i = 0; i < 100; i++) {
     v++;
   }
 }
-
+movies.forEach;
 console.log("Es 8 : ", allNumbers);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
