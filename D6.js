@@ -56,16 +56,26 @@ console.log("Es 7 map: ", numCharacters);
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-const allNumbers = [];
-let v = 0;
-for (let i = 0; i < 100; i++) {
-  if (i % 2 !== 0) {
-    allNumbers[v] = i;
-    v++;
-  }
-}
-movies.forEach;
-console.log("Es 8 : ", allNumbers);
+let oddNumbers = [];
+// let v = 0;
+// for (let i = 0; i < 100; i++) {
+//   if (i % 2 !== 0) {
+//     allNumbers[v] = i;
+//     v++;
+//   }
+// }
+const allOddNumbers = () => {
+  let oddNumbersInsideFunction = [];
+  let allNumbers = [];
+  for (let i = 0; i < 100; i++) allNumbers[i] = i;
+  console.log(allNumbers);
+  allNumbers.forEach((num) => {
+    if (num % 2 !== 0) oddNumbersInsideFunction.push(num);
+  });
+  return oddNumbersInsideFunction;
+};
+oddNumbers = allOddNumbers();
+console.log("Es 8 : ", oddNumbers);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
